@@ -12,21 +12,21 @@ export default function App() {
 	}
 	return (
 		<SafeAreaView style={styles.container}>
-				<Image  source={{ uri: "https://www.konexio.eu/uploads/1/2/0/2/120245745/konexio-logo_1.png" }}
-				style={{ width: 300, height: 100, marginBottom: 100 }} />
-				<TextInput
-					style={{ borderWidth: 1, width: 200, padding: 8, borderRadius: 5, borderColor: "lightgrey"}}
-					placeholder="Login"
-				/>
-				<TextInput
-					style={{ borderWidth: 1, width: 200, padding: 8, borderRadius: 8, borderColor: "lightgrey", marginTop: 10}}
-					placeholder="Password"
-					secureTextEntry={true}
-					onChangeText={(password) => setPassword(password)}
-					
-				/>
-				<Button onPress={() => signIn()} title='Submit'/>
-			<StatusBar style="auto" />
+			<Image  source={{ uri: "https://www.konexio.eu/uploads/1/2/0/2/120245745/konexio-logo_1.png" }}
+			style={{ width: 300, height: 100, marginBottom: 100 }} />
+			<TextInput
+				style={{ borderWidth: 1, width: 200, padding: 8, borderRadius: 5, borderColor: "lightgrey"}}
+				placeholder="Login"
+			/>
+			<TextInput
+				style={{ borderWidth: 1, width: 200, padding: 8, borderRadius: 8, borderColor: "lightgrey", marginTop: 10}}
+				placeholder="Password"
+				secureTextEntry={true}
+				onChangeText={(password) => setPassword(password)}
+				
+			/>
+			<Button onPress={() => signIn()} title='Submit'/>
+		<StatusBar style="auto" />
 		</SafeAreaView>
 	);
 }
